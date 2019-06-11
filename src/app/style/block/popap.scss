@@ -1,0 +1,78 @@
+
+.popap__wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.popap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 4rem;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.popap__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+
+  & span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #b5b5b5;
+    transform: rotate(45deg);
+
+    &:last-of-type {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.popap__title {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.popap__formInput {
+  display: block;
+  width: 290px;
+  text-align: center;
+  border: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.popap__formInput_phone {
+  padding: 1rem 1.5rem;
+  border: 1px solid #b5b5b5;
+  margin-bottom: .5rem;
+}
+
+.popap__formInput_btn {
+  margin-bottom: 1rem;
+}
+
+.popap__description {
+  max-width: 290px;
+  color: #d8d8d8;
+  font-size: 10px;
+}

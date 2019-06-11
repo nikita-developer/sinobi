@@ -1,0 +1,35 @@
+
+.section {
+  overflow: hidden;
+}
+
+.section_leftRed {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 44%;
+    height: 100%;
+    background-color: #cc0525;
+    content: '';
+  }
+}
+
+@media(max-width: 980px) {
+  .section_leftRed {
+    &::before {
+      width: 55%;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .section_leftRed {
+    &::before {
+      width: 100%;
+    }
+  }
+}

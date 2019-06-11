@@ -1,0 +1,22 @@
+
+.burger {
+  display: none;
+  overflow: hidden;
+}
+
+@media(max-width: 768px) {
+  .burger {
+    display: block;
+    width: 44px;
+    height: 38px;
+    padding-right: 8px;
+    cursor: pointer;
+
+    & span {
+      display: block;
+      height: 2px;
+      background-color: #fff;
+      margin-top: 8px;
+    }
+  }
+}
